@@ -9,16 +9,25 @@
     <!-- Bootstrap CSS Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>giakbsu</title>
 </head>
 <body class="bg-dark">
-    
+    <!-- ICONS -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+        </symbol>
+        <symbol id="footer-phone-number-icon-svg" viewbox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd" d="M6.347 3.736a1.8 1.8 0 0 1 2.589.413l1.97 2.877a1.812 1.812 0 0 1-.335 2.415l-1.579 1.316c.102 2.248 1.907 4.098 4.184 4.267a.09.09 0 0 0 .074-.03l1.411-1.707a1.661 1.661 0 0 1 2.27-.277l2.97 2.2a1.82 1.82 0 0 1 .252 2.696c-.396.428-.881.952-1.71 1.828-.517.548-1.278.812-2.093.885-.824.073-1.773-.042-2.766-.324-1.987-.564-4.24-1.82-6.177-3.779-1.942-1.964-3.145-4.272-3.693-6.26-.273-.993-.389-1.929-.338-2.718.049-.762.263-1.511.784-1.974a41.506 41.506 0 0 1 2.187-1.828ZM7.853 4.89a.488.488 0 0 0-.7-.118 40.2 40.2 0 0 0-2.121 1.773c-.136.12-.306.443-.347 1.077-.039.608.05 1.394.295 2.286.49 1.78 1.582 3.888 3.36 5.686 1.784 1.803 3.841 2.94 5.603 3.439.881.25 1.666.334 2.29.279.635-.056 1.039-.248 1.257-.48.824-.87 1.306-1.39 1.699-1.816a.508.508 0 0 0-.07-.752l-2.97-2.2a.35.35 0 0 0-.477.059l-1.41 1.707c-.29.35-.735.535-1.183.502-3.016-.223-5.403-2.738-5.403-5.776 0-.26.115-.506.315-.673l1.74-1.45a.5.5 0 0 0 .092-.666L7.853 4.89Z" clip-rule="evenodd"></path>
+        </symbol>
+    </svg>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Пробный ЕГЭ/ОГЭ</a>
+            <a href="#" class="navbar-brand">Пробный ЕГЭ</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -41,22 +50,44 @@
     </nav>
 
     <!-- Showcase -->
-    <section class="bg-dark text-light p-5 text-center ">
-        <div class="container">
-            <div class="d-sm-flex p-5 align-items-center justify-content-center">
+    <section class="bg-dark text-light p-5">
+        <div class="container pt-3">
+            <div class="d-sm-flex p-5">
                 <div>
-                    <h1>Пробный ЕГЭ/ОГЭ</h1>
-                    <p class="lead my-4">
-                    ... подготовьтесь с нами... <br>
-                    какая-то информация <br>
-                    какая-то информация
+                    <h1>Пробное прохождение ЕГЭ в КБГУ</h1>
+                    <p class="my-4 main-description">
+                        «Пробное прохождение ЕГЭ в Кабардино-Балкарском государственном <br>
+                        университете им. Х.М. Бербекова позволит выпускникам оценить свою <br>
+                        готовность к предстоящему экзамену и выявить слабые места в знаниях, <br>
+                        чтобы уделить им больше внимания при подготовке. <br>
+                        <br>
+                        В пробном экзамене будут воссозданы условия реального ЕГЭ: от организационных <br>
+                        моментов до структуры и содержания контрольно-измерительных материалов. <br>
+                        Участники смогут потренироваться в заполнении бланков, решении задач и написании эссе,<br>
+                        а также узнать о правилах поведения на экзамене и особенностях проверки работ.
                     </p>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Записаться</button>
+                    <div class="ps-2 pt-2">
+                        <button class="btn btn-primary btn-lg rounded-4 custom-register-button" data-bs-toggle="modal" data-bs-target="#enroll">Зарегистрироваться</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="p-5 bg-light">
+        <div class="container p-5 pb-2 pt-2">
+            <h4 class="pb-3">Пробное тестирование поможет выпускникам:</h4>
+            <div class="d-flex">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light">	•	проверить уровень знаний по выбранным предметам</li>
+                    <li class="list-group-item bg-light">   •	научиться распределять время на выполнение заданий</li>
+                    <li class="list-group-item bg-light">   •	снизить тревожность перед экзаменом</li>
+                    <li class="list-group-item bg-light">   •	понять, какие темы требуют дополнительной проработки</li>
+                </ul> 
+            </div>
+            
+        </div>
+    </section>
 
     <!-- Предметы -->
     <section id="topics" class="bg-dark p-5 d-none d-lg-block">
@@ -111,11 +142,11 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Сколько стоит одно тестирование?
+                            Сколько стоит пробное прохождение экзамена?
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body bg-light">Цена зависит от предметов, в среднем 500р</div>
+                        <div class="accordion-body bg-light">Стоимость 1 экзамена- 600 рублей.</div>
                     </div>
                 </div>
 
@@ -123,11 +154,11 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Где проходит тестирование?
+                        По скольким предметам можно сдать экзамен?
                     </button>
                     </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body bg-light">Тестирование проходит в кабинетах КБГУ</div>
+                    <div class="accordion-body bg-light">Можно будет пройти экзамен по всем предложенным предметам.</div>
                     </div>
                 </div>
 
@@ -135,18 +166,30 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Насколько тестирование будет похоже на реальный ЕГЭ/ОГЭ?
+                        В какие даты проводятся экзамены?
                     </button>
                     </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body bg-light">Мы вкладываемся в том, чтобы опыт был как можно более похожим на то, что будет происходит в реальном тестировании. Это тестирование будет проходит, также, как реальное.</div>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body bg-light">(Приложение 1 прикрепить к этому ответу).</div>
+                    </div>
+                </div>
+
+                <!-- Qustion 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Где будут проходить пробные экзамены?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body bg-light">Пробные экзамены будут проходить в учебных корпусах КБГУ, вход с КПП на ул. Толстого</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
             <p class="lead">Copyright &copy; 2024</p>
@@ -154,7 +197,32 @@
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
-    </footer>
+    </footer> -->
+
+
+<!-- Footer -->
+<section class="bg-nav-bg custom-footer">
+    <div class="container p-md-0 p-2">
+        <footer class="py-5">
+        <div class="row">
+            <div class="col-6 mb-3 footer-phone-number d-flex align-items-center">
+                <div class="footer-outlinedBoxes d-flex align-items-center justify-content-center text-light"><svg width="24" height="24"><use xlink:href="#footer-phone-number-icon-svg"/></svg></div>
+                <div class="ps-3 text-light">+7 (866) 272-20-24</div>
+            </div>
+        <div class="col-5 offset-md-1 list-unstyled d-flex flex-row-reverse mb-3">
+                <div class="align-content-center">
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://t.me/abiturient_kbgu"><svg class="bi bi-telegram" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+            <p class="text-light justify-content-end">Copyright &copy; 2024. All rights reserved. </p>
+            <p class="text-light">Made by KARAF</p>
+        </div>
+        </footer>
+    </div>
+</section>
 
     <!-- Modal -->
     <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
