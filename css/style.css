@@ -48,6 +48,17 @@
     font-family: Navigo Regular;
 } */
 
+/* Disciplines */
+.disciplines-text-main {
+    font-family: Navigo Regular;
+}
+.discipline-text {
+    font-family: Navigo Light;
+    font-size: 15px;
+    /* opacity: 0.9; */
+}
+/* End of Discplines */
+
 
 /* Footer */
 .custom-footer {
