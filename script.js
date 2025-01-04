@@ -2,6 +2,7 @@
 // Form
 const form = document.querySelector("#form")
 const submitButton = document.querySelector("#submit")
+const priceSum = document.querySelector("#priceSum")
 const requiredFields = document.querySelectorAll(".reqField")
 const checkBoxes = document.querySelectorAll('.form-check-input')
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxC14lOYw13DpXF_RNEpHWn-SK1_oDqDUN_n0j3Z6_Grp6Q3GnGLomoGBh2RJ9kakePHw/exec'
@@ -9,16 +10,20 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxC14lOYw13DpXF_RNEpH
 // Проверка при любом инпуте
 window.onload = function() {
     form.addEventListener('input', function() {
-        // Проверка хотябы одного выбранного предмета
-        var oneChecked = false;
+        // Количество выбранных предметов
+        var checkAmount = 0;
         for(var i = 0; i<checkBoxes.length; i++){
             if(checkBoxes[i].checked){
-                oneChecked = true;
+                checkAmount++;
             }
         }
+        
+        // Суммарная цена
+        priceSum.innerHTML = checkAmount*600 + "р";
+
         // Проверка заполнения полей
         const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== '');
-        if (allFilled && oneChecked) {
+        if (allFilled && checkAmount>0) {
             submitButton.classList.remove('disabled');
             submitButton.setAttribute("aria-disabled", "false");
             submitButton.setAttribute("tabindex", "0");

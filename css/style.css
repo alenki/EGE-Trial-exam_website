@@ -44,9 +44,9 @@
     border-radius: 15px;
 }
 
-/* h1, h2, h3, h4, h5, h6, span, li {
-    font-family: Navigo Regular;
-} */
+.form-check-input, .form-check-label {
+    cursor: pointer;
+}
 
 /* Disciplines */
 .disciplines-text-main {
