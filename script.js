@@ -23,7 +23,7 @@ window.onload = function() {
 
         // Проверка заполнения полей
         const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== '');
-        if (allFilled && checkAmount>0) {
+        if (allFilled && checkAmount>=0) {
             submitButton.classList.remove('disabled');
             submitButton.setAttribute("aria-disabled", "false");
             submitButton.setAttribute("tabindex", "0");
@@ -43,12 +43,12 @@ submitButton.onclick = function(e) {
     .then(response => {
         // alert('Success!', response)
         // submitButton.disabled = false
-        location.reload();
+        // location.reload();
+        // form.submit();
     })
     .catch(error => {
         alert('Error!', error.message)
         submitButton.disabled = false
     })
 }
-
 // End of Form
