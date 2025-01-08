@@ -44,7 +44,23 @@ submitButton.onclick = function(e) {
         // alert('Success!', response)
         // submitButton.disabled = false
         // location.reload();
-        // form.submit();
+        // var all_id = document.getElementsByName("product_id[]");
+        // for(var i = 0; i<all_id.length; ++i){
+        //     form.append("id_list", all_id[i].getAttribute("value"));
+        // }
+        // console.log(form);
+        // console.log(requestBody);
+        // fetch('https://sale.giakbsu.ru/payment/form', {
+        //     method: 'POST',
+        //     // mode: 'no-cors',
+        //     body: requestBody
+        //     }).then((response) => { 
+        //         // do something with response here... 
+        //     });
+        // var request = new XMLHttpRequest();
+        // request.open('POST', 'https://sale.giakbsu.ru/payment/form');
+        // request.send(form);
+        form.submit();
     })
     .catch(error => {
         alert('Error!', error.message)

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- Bootstrap CSS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>giakbsu</title>
+</head>
+<body class="bg-dark">
+    <!-- ICONS -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+        </symbol>
+        <symbol id="footer-phone-number-icon-svg" viewbox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd" d="M6.347 3.736a1.8 1.8 0 0 1 2.589.413l1.97 2.877a1.812 1.812 0 0 1-.335 2.415l-1.579 1.316c.102 2.248 1.907 4.098 4.184 4.267a.09.09 0 0 0 .074-.03l1.411-1.707a1.661 1.661 0 0 1 2.27-.277l2.97 2.2a1.82 1.82 0 0 1 .252 2.696c-.396.428-.881.952-1.71 1.828-.517.548-1.278.812-2.093.885-.824.073-1.773-.042-2.766-.324-1.987-.564-4.24-1.82-6.177-3.779-1.942-1.964-3.145-4.272-3.693-6.26-.273-.993-.389-1.929-.338-2.718.049-.762.263-1.511.784-1.974a41.506 41.506 0 0 1 2.187-1.828ZM7.853 4.89a.488.488 0 0 0-.7-.118 40.2 40.2 0 0 0-2.121 1.773c-.136.12-.306.443-.347 1.077-.039.608.05 1.394.295 2.286.49 1.78 1.582 3.888 3.36 5.686 1.784 1.803 3.841 2.94 5.603 3.439.881.25 1.666.334 2.29.279.635-.056 1.039-.248 1.257-.48.824-.87 1.306-1.39 1.699-1.816a.508.508 0 0 0-.07-.752l-2.97-2.2a.35.35 0 0 0-.477.059l-1.41 1.707c-.29.35-.735.535-1.183.502-3.016-.223-5.403-2.738-5.403-5.776 0-.26.115-.506.315-.673l1.74-1.45a.5.5 0 0 0 .092-.666L7.853 4.89Z" clip-rule="evenodd"></path>
+        </symbol>
+    </svg>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Пробный ЕГЭ</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#topics" class="nav-link">Предметы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Вопросы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5">
+        <div class="container pt-3">
+            <div class="d-sm-flex p-5 row justify-content-between align-items-center">
+                <div class="col-md">
+                    <h1>Пробный ЕГЭ в КБГУ</h1>
+                    <p class="my-4 main-description">
+                        «Пробное прохождение ЕГЭ в Кабардино-Балкарском государственном <br>
+                        университете им. Х.М. Бербекова позволит выпускникам оценить свою <br>
+                        готовность к предстоящему экзамену и выявить слабые места в знаниях, <br>
+                        чтобы уделить им больше внимания при подготовке. <br>
+                        <br>
+                        В пробном экзамене будут воссозданы условия реального ЕГЭ: от организационных 
+                        моментов до структуры и содержания контрольно-измерительных материалов. 
+                        Участники смогут потренироваться в заполнении бланков, решении задач и написании эссе,
+                        а также узнать о правилах поведения на экзамене и особенностях проверки работ.
+                    </p>
+                    <div class="ps-2 pt-2">
+                        <button class="btn btn-primary btn-lg rounded-4 custom-register-button" data-bs-toggle="modal" data-bs-target="#enroll">Зарегистрироваться</button>
+                    </div>
+                </div>
+                <div class="col-md d-none d-md-block sectionImagediv-1">
+                    <img src="KBSU-1.jpg" class="d-block w-100 customSectionImage-1" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 bg-light">
+        <div class="container p-5 pb-2 pt-2 d-flex">
+            <div class="d-sm-flex row justify-content-between align-items-center">
+                <div class="col-md d-none d-md-block sectionImagediv-2">
+                    <img src="KBSU-2.jpg" class="d-block w-100 customSectionImage-2" alt="">
+                </div>
+                <div class="col-md d-flex justify-content-end">
+                    <div class="ps-5">
+                        <h4 class="pb-3">Пробное тестирование поможет выпускникам:</h4>
+                        <div class="d-flex">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-light">	•	проверить уровень знаний по выбранным предметам</li>
+                                <li class="list-group-item bg-light">   •	научиться распределять время на выполнение заданий</li>
+                                <li class="list-group-item bg-light">   •	снизить тревожность перед экзаменом</li>
+                                <li class="list-group-item bg-light">   •	понять, какие темы требуют дополнительной проработки</li>
+                            </ul>                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Предметы -->
+    <section id="topics" class="bg-dark p-5 d-lg-block">
+        <div class="container">
+            <div class="d-flex p-4 bg-primary rounded-5">
+                <div class="container">
+                    <h2 class="text-white disciplines-text-main">Предметы</h2>
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Математика
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12 col-lg-6 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Русский язык
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                История
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Обществознание
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                География
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Химия
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Биология
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Физика
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Английский язык
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Литература
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4 pt-lg-0 pt-3">
+                            <div class="text-primary-emphasis bg-light rounded-3 text-center p-2 discipline-text">
+                                Информатика
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Question Accordion -->
+<section id="questions" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Сколько стоит пробное прохождение экзамена?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body bg-light">Стоимость 1 экзамена- 600 рублей.</div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        По скольким предметам можно сдать экзамен?
+                    </button>
+                    </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body bg-light">Можно будет пройти экзамен по всем предложенным предметам.</div>
+                    </div>
+                </div>
+
+                <!-- Qustion 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        В какие даты проводятся экзамены?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body bg-light">(Приложение 1 прикрепить к этому ответу).</div>
+                    </div>
+                </div>
+
+                <!-- Qustion 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Где будут проходить пробные экзамены?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body bg-light">Пробные экзамены будут проходить в учебных корпусах КБГУ, вход с КПП на ул. Толстого</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<section class="bg-nav-bg custom-footer" id="contact">
+    <div class="container p-md-0 p-2">
+        <footer class="py-5">
+        <div class="row">
+            <div class="col-6 mb-3 footer-phone-number d-flex align-items-center">
+                <div class="footer-outlinedBoxes d-flex align-items-center justify-content-center text-light"><svg width="24" height="24"><use xlink:href="#footer-phone-number-icon-svg"/></svg></div>
+                <div class="ps-3 text-light">+7 (866) 272-20-24</div>
+            </div>
+        <div class="col-5 offset-md-1 list-unstyled d-flex flex-row-reverse mb-3">
+                <div class="align-content-center">
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://t.me/abiturient_kbgu"><svg class="bi bi-telegram" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+            <a href="https://t.me/xAlenki" class="text-light" style="text-decoration: none;" target="_blank">Made by KARAF</a>
+            <p class="text-light">Copyright &copy; 2024. All rights reserved. </p>
+            <button class="btn btn-outline-primary text-light" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#details">Реквизиты</button>
+        </div>
+        </footer>
+    </div>
+</section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="enrollLabel">Регистрация</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <form id="form" action="https://sale.giakbsu.ru/payment/form" method="post" target="_blank">
+                    <div class="mb-3">
+                        <label for="first-name" class="col-form-label">ФИО:</label>
+                        <input type="text" class="form-control reqField" name="name" id="first-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Почта:</label>
+                        <input type="email" class="form-control reqField" name="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">Номер телефона:</label>
+                        <input type="text" class="form-control reqField" name="Номер телефона" id="phone-name">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Математика" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Математика
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Русский язык" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Русский язык
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="История" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck3">
+                            История
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Обществознание" id="defaultCheck4">
+                        <label class="form-check-label" for="defaultCheck4">
+                            Обществознание
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="География" id="defaultCheck5">
+                        <label class="form-check-label" for="defaultCheck5">
+                            География
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Химия" id="defaultCheck6">
+                        <label class="form-check-label" for="defaultCheck6">
+                            Химия
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Биология" id="defaultCheck7">
+                        <label class="form-check-label" for="defaultCheck7">
+                            Биология
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Физика" id="defaultCheck8">
+                        <label class="form-check-label" for="defaultCheck8">
+                            Физика
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Английский язык" id="defaultCheck9">
+                        <label class="form-check-label" for="defaultCheck9">
+                            Английский язык
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Литература" id="defaultCheck10">
+                        <label class="form-check-label" for="defaultCheck10">
+                            Литература
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Есть" name="Информатика" id="defaultCheck11">
+                        <label class="form-check-label" for="defaultCheck11">
+                            Информатика
+                        </label>
+                    </div>
+                    <!-- temp -->
+                    <textarea name="notes" value="" hidden></textarea>
+                    <!-- ID товара в в админ панели -->
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p class="me-auto ps-2" id="priceSum" style="font-size: 17px; font-family: Navigo Light;">0р</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+                <button type="submit" class="btn btn-primary disabled" id="submit" aria-disabled="true" tabindex="-1">Потдвердить</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Реквизиты -->
+    <div class="modal fade" id="details" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="enrollLabel">Реквизиты</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span>
+                            <h6>Караф Аслан Имад</h6>
+                            Самозанятый, ИНН: 070712142271 <br>
+                            Номер телефона: +7 (922) 561-77-82
+                        </span>
+                    </div>
+                    <div class="mt-2">
+                        <span>
+                            <h6>Караф Омар Амер</h6>
+                            Номер телефона: +7 (928) 691-26-02
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="mainscript.js"></script>
+</body>
+</html>
