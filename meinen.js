@@ -5,7 +5,7 @@ const submitButton = document.querySelector("#submit")
 const priceSum = document.querySelector("#priceSum")
 const requiredFields = document.querySelectorAll(".reqField")
 const checkBoxes = document.querySelectorAll('.form-check-input')
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxC14lOYw13DpXF_RNEpHWn-SK1_oDqDUN_n0j3Z6_Grp6Q3GnGLomoGBh2RJ9kakePHw/exec'
+const enrollModal = new bootstrap.Modal(document.getElementById('enroll')); 
 
 // Проверка при любом инпуте
 window.onload = function() {
@@ -38,33 +38,22 @@ window.onload = function() {
 submitButton.onclick = function(e) {
     submitButton.disabled = true
     e.preventDefault()
-    let requestBody = new FormData(form)
-    fetch(scriptURL, { method: 'POST', body: requestBody})
-    .then(response => {
-        // alert('Success!', response)
-        // submitButton.disabled = false
-        // location.reload();
-        // var all_id = document.getElementsByName("product_id[]");
-        // for(var i = 0; i<all_id.length; ++i){
-        //     form.append("id_list", all_id[i].getAttribute("value"));
-        // }
-        // console.log(form);
-        // console.log(requestBody);
-        // fetch('https://sale.giakbsu.ru/payment/form', {
-        //     method: 'POST',
-        //     // mode: 'no-cors',
-        //     body: requestBody
-        //     }).then((response) => { 
-        //         // do something with response here... 
-        //     });
-        // var request = new XMLHttpRequest();
-        // request.open('POST', 'https://sale.giakbsu.ru/payment/form');
-        // request.send(form);
-        form.submit();
-    })
-    .catch(error => {
-        alert('Error!', error.message)
-        submitButton.disabled = false
-    })
+    form.submit();
 }
 // End of Form
+
+// Disciplines 
+document.onclick = function(e) {
+    if(e.target.classList.contains("discipline-text")){
+        // open enroll modal and check the involved checkbox
+        for(var i = 0; i<checkBoxes.length; ++i){
+            if(e.target.id==checkBoxes[i].value){
+                checkBoxes[i].setAttribute("checked","");
+                // call "input" event for form to update price
+                form.dispatchEvent(new Event("input"));
+            }
+        }
+        enrollModal.show();
+    }
+};
+// End of Disciplines

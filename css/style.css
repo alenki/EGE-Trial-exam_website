@@ -55,6 +55,7 @@
 .discipline-text {
     font-family: Navigo Light;
     font-size: 15px;
+    cursor: pointer;
     /* opacity: 0.9; */
 }
 /* End of Discplines */
