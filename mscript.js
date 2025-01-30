@@ -4,7 +4,8 @@ const form = document.querySelector("#form")
 const submitButton = document.querySelector("#submit")
 const priceSum = document.querySelector("#priceSum")
 const requiredFields = document.querySelectorAll(".reqField")
-const checkBoxes = document.querySelectorAll('.form-check-input')
+const checkBoxes = document.querySelectorAll('.discipline-input')
+const termBox = document.querySelector("#defaultCheckTerms")
 const enrollModal = new bootstrap.Modal(document.getElementById('enroll')); 
 
 // Проверка при любом инпуте
@@ -17,13 +18,12 @@ window.onload = function() {
                 checkAmount++;
             }
         }
-        
         // Суммарная цена
         priceSum.innerHTML = checkAmount*600 + "р";
 
         // Проверка заполнения полей
         const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== '');
-        if (allFilled && checkAmount>=0) {
+        if (allFilled && checkAmount>0 && termBox.checked) {
             submitButton.classList.remove('disabled');
             submitButton.setAttribute("aria-disabled", "false");
             submitButton.setAttribute("tabindex", "0");

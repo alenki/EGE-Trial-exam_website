@@ -11,7 +11,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>giakbsu</title>
+    <title>КБГУ</title>
+
+    <link rel="icon" type="image/png" href="files/kbsu_logo.png">
 </head>
 <body class="bg-dark">
     <!-- ICONS -->
@@ -76,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col-md d-none d-md-block sectionImagediv-1">
-                    <img src="KBSU-1.jpg" class="d-block w-100 customSectionImage-1" alt="">
+                    <img src="files/KBSU-1.jpg" class="d-block w-100 customSectionImage-1" alt="">
                 </div>
             </div>
         </div>
@@ -86,7 +88,7 @@
         <div class="container pb-2 pt-2 d-flex justify-content-center">
             <div class="d-flex row justify-content-between align-items-center">
                 <div class="col-md d-none d-md-block sectionImagediv-2">
-                    <img src="KBSU-2.jpg" class="d-block w-100 customSectionImage-2" alt="">
+                    <img src="files/KBSU-2.jpg" class="d-block w-100 customSectionImage-2" alt="">
                 </div>
                 <div class="col-md d-flex justify-content-end">
                     <div class="px-4">
@@ -200,7 +202,7 @@
                     </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body bg-light"><a href="Приложение.docx">Приложение</a></div>
+                        <div class="accordion-body bg-light"><a href="files/Приложение.docx">Приложение</a></div>
                     </div>
                 </div>
 
@@ -230,7 +232,7 @@
             </div>
         <div class="offset-md-1 list-unstyled d-flex flex-row-reverse mb-3">
             <div class="align-content-center">
-                <li class="ms-3"><a class="link-body-emphasis" href="https://t.me/abiturient_kbgu"><svg class="bi bi-telegram" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="https://t.me/abiturient_kbgu" target="_blank"><svg class="bi bi-telegram" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
             </div>
         </div>
     </div>
@@ -261,50 +263,53 @@
                         <label for="email" class="col-form-label">Почта:</label>
                         <input type="email" class="form-control reqField" name="email" id="email">
                     </div>
-                    <div class="mb-3">
-                        <label for="phone" class="col-form-label">Номер телефона:</label>
-                        <input type="text" class="form-control reqField" name="Номер телефона" id="phone-name">
-                    </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="22" name="Item_1" id="defaultCheck1">
+                        <input class="form-check-input discipline-input" type="checkbox" value="22" name="Item_1" id="defaultCheck1">
                         <label class="form-check-label" for="defaultCheck1">
                             Математика
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="23" name="Item_2" id="defaultCheck2">
+                        <input class="form-check-input discipline-input" type="checkbox" value="23" name="Item_2" id="defaultCheck2">
                         <label class="form-check-label" for="defaultCheck2">
                             Русский язык
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="24" name="Item_3" id="defaultCheck3">
+                        <input class="form-check-input discipline-input" type="checkbox" value="24" name="Item_3" id="defaultCheck3">
                         <label class="form-check-label" for="defaultCheck3">
                             История
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="25" name="Item_4" id="defaultCheck4">
+                        <input class="form-check-input discipline-input" type="checkbox" value="25" name="Item_4" id="defaultCheck4">
                         <label class="form-check-label" for="defaultCheck4">
                             Обществознание
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="27" name="Item_6" id="defaultCheck6">
+                        <input class="form-check-input discipline-input" type="checkbox" value="27" name="Item_6" id="defaultCheck6">
                         <label class="form-check-label" for="defaultCheck6">
                             Химия
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="28" name="Item_7" id="defaultCheck7">
+                        <input class="form-check-input discipline-input" type="checkbox" value="28" name="Item_7" id="defaultCheck7">
                         <label class="form-check-label" for="defaultCheck7">
                             Биология
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="29" name="Item_8" id="defaultCheck8">
+                        <input class="form-check-input discipline-input" type="checkbox" value="29" name="Item_8" id="defaultCheck8">
                         <label class="form-check-label" for="defaultCheck8">
                             Физика
+                        </label>
+                    </div>
+                    <!-- Пользовательское соглашение -->
+                    <div class="form-check pt-3" style="font-size: 0.79rem;">
+                        <input class="form-check-input" type="checkbox" value="true" name="true" id="defaultCheckTerms">
+                        <label class="form-check-label" for="defaultCheckTerms">
+                            Я согласен(а) на обработку <a href="files/Пользовательское соглашение.docx" target="_blank">персональных данных</a> и ознакомлен(а) с <a href="https://open08.kbsu.ru:8033/moodle/theme/roshni/uploaded/5_loc.pdf" target="_blank">политикой конфиденциальности</a>.
                         </label>
                     </div>
                     <!-- temp -->
@@ -316,7 +321,7 @@
             <div class="modal-footer">
                 <p class="me-auto ps-2" id="priceSum" style="font-size: 17px; font-family: Navigo Light;">0р</p>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
-                <button type="submit" class="btn btn-primary disabled" id="submit" aria-disabled="true" tabindex="-1">Потдвердить</button>
+                <button type="submit" class="btn btn-primary disabled" id="submit" aria-disabled="true" tabindex="-1">Продолжить</button>
             </div>
             </div>
         </div>
@@ -352,6 +357,6 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Custom JavaScript -->
-    <script src="main-script.js"></script>
+    <script src="mscript.js"></script>
 </body>
 </html>
