@@ -263,7 +263,21 @@
                         <label for="email" class="col-form-label">Почта:</label>
                         <input type="email" class="form-control reqField" name="number" id="email">
                     </div>
-                    <input type="file" class="pb-3" name="media" accept="application/pdf" id="media"/>
+                    <!-- ЧЕК -->
+                    
+                    <!-- <button type="button">
+                        <label for="media">ЧЕК</label>
+                    </button> -->
+                    <div class="d-flex align-items-center pb-2">
+                        <label for="media" onclick="fileUploadClick">
+                            <div class="btn btn-primary">Выбрать файл</div>
+                        </label>
+                        <input type="file" class="pb-3" name="media" accept="application/pdf" id="media" style="display:none;" onchange="showname()"/>
+                        <span class="ps-2" id="choose_file_text"></span>
+                    </div>
+                    
+
+                    <!-- Предметы формы -->
                     <div class="form-check">
                         <input class="form-check-input discipline-input" type="checkbox" value="ДА" name="Математика" id="defaultCheck1">
                         <label class="form-check-label" for="defaultCheck1">

@@ -1,5 +1,3 @@
-
-// Form
 const form = document.querySelector("#form")
 const submitButton = document.querySelector("#submit")
 const priceSum = document.querySelector("#priceSum")
@@ -77,7 +75,7 @@ submitButton.onclick = function(e) {
         })
     }
 }
-// End of Form
+// End of Обработка подтверждения регистрации
 
 // Disciplines 
 document.onclick = function(e) {
@@ -94,3 +92,17 @@ document.onclick = function(e) {
     }
 };
 // End of Disciplines
+
+// Choose a file
+const choose_file_text = document.getElementById("choose_file_text");
+const fileUploadClick = (e) => {
+    if(e.target!==e.currentTarget) e.currentTarget.click()
+}
+function showname () {
+    var name = document.getElementById('media'); 
+    choose_file_text.innerHTML = name.files.item(0).name;
+    // alert('Selected file: ' + name.files.item(0).name);
+    // alert('Selected file: ' + name.files.item(0).size);
+    // alert('Selected file: ' + name.files.item(0).type);
+};
+// End of Choose a file
