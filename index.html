@@ -272,14 +272,16 @@
                         <input type="text" class="form-control reqField" name="school" id="school">
                     </div>
                     <!-- ЧЕК -->
-                    <div class="d-flex align-items-center pb-2">
+                    <div class="d-flex align-items-center pb-1">
                         <label for="media" onclick="fileUploadClick">
                             <div class="btn btn-primary">Выбрать файл</div>
                         </label>
                         <input type="file" class="pb-3" name="media" accept="application/pdf" id="media" style="display:none;" onchange="showname()"/>
-                        <span class="ps-2" id="choose_file_text"></span>
+                        <span class="ps-2" id="choose_file_text">Прикрепите чек</span>
                     </div>
-                    
+                    <div class="pb-2">
+                        <a href="payment_instructions.html" style="font-size: 1rem;" id="payment_instructions_button" target="_blank">Инструкция по оплате</a>
+                    </div>
 
                     <!-- Предметы формы -->
                     <div class="form-check">
