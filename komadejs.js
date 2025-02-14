@@ -22,7 +22,7 @@ window.onload = function() {
 
         // Проверка заполнения полей
         const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== '');
-        if (allFilled && checkAmount>0 && termBox.checked) {
+        if (allFilled && checkAmount>0 && termBox.checked && document.getElementById("media").value) {
             submitButton.classList.remove('disabled');
             submitButton.setAttribute("aria-disabled", "false");
             submitButton.setAttribute("tabindex", "0");
